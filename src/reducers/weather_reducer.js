@@ -1,6 +1,7 @@
 import { FETCH_WEATHER } from '../actions/index';
 
 export function WeatherReducer(state = [], action) {
+  console.log('Actions:', action);
   switch(action.type) {
     case FETCH_WEATHER:
       //ES6 sytax
