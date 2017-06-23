@@ -18,9 +18,9 @@ class WeatherList extends Component {
     return (
       <tr key = {name}>
         <td>{name}</td>
-        <td><Chart data={temps} color='orange' /></td>
-        <td><Chart data={pressures} color='green' /></td>
-        <td><Chart data={humidities} color='black' /></td>
+        <td><Chart data={temps} color='orange' unit='K'/></td>
+        <td><Chart data={pressures} color='green' unit='hPa'/></td>
+        <td><Chart data={humidities} color='black' unit='%'/></td>
       </tr>
     );
   }
@@ -32,8 +32,8 @@ class WeatherList extends Component {
           <tr>
             <th>City</th>
             <th>Temperature(K)</th>
-            <th>Pressure   (hPa)</th>
-            <th>Humidity   (%)</th>
+            <th>Pressure(hPa)</th>
+            <th>Humidity(%)</th>
           </tr>
         </thead>
         <tbody>
